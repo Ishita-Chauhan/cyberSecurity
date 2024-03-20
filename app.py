@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import bcrypt
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 app.secret_key = '123456'
 
 users = {}
